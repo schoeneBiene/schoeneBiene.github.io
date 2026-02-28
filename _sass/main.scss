@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+:root {
+  --cat-rosewater: rgb(245, 224, 220);
+  --cat-flamingo: rgb(242, 205, 205);
+  --cat-pink: rgb(245, 194, 231);
+  --cat-mauve: rgb(203, 166, 247);
+  --cat-red: rgb(243, 139, 168);
+  --cat-maroon: rgb(235, 160, 172);
+  --cat-peach: rgb(250, 179, 135);
+  --cat-yellow: rgb(249, 226, 175);
+  --cat-green: rgb(166, 227, 161);
+  --cat-teal: rgb(148, 226, 213);
+  --cat-sky: rgb(137, 220, 235);
+  --cat-sapphire: rgb(116, 199, 236);
+  --cat-blue: rgb(137, 180, 250);
+  --cat-lavender: rgb(180, 190, 254);
+
+  --cat-text: rgb(205, 214, 244);
+  --cat-subtext-1: rgb(186, 194, 222);
+  --cat-subtext-0: rgb(166, 173, 200);
+
+  --cat-overlay-2: rgb(147, 153, 178);
+  --cat-overlay-2-selection: rgba(147, 153, 178, 0.3);
+  --cat-overlay-1: rgb(127, 132, 156);
+  --cat-overlay-0: rgb(108, 112, 134);
+
+  --cat-surface-2: rgb(88, 91, 112);
+  --cat-surface-1: rgb(69, 71, 90);
+  --cat-surface-0: rgb(49, 50, 68);
+
+  --cat-base: rgb(30, 30, 46);
+  --cat-mantle: rgb(24, 24, 37);
+  --cat-crust: rgb(17, 17, 27);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cat-rosewater: rgb(220, 138, 120);
+    --cat-flamingo: rgb(221, 120, 120);
+    --cat-pink: rgb(234, 118, 203);
+    --cat-mauve: rgb(136, 57, 239);
+    --cat-red: rgb(210, 15, 57);
+    --cat-maroon: rgb(230, 69, 83);
+    --cat-peach: rgb(254, 100, 11);
+    --cat-yellow: rgb(223, 142, 29);
+    --cat-green: rgb(64, 160, 43);
+    --cat-teal: rgb(23, 146, 153);
+    --cat-sky: rgb(4, 165, 229);
+    --cat-sapphire: rgb(32, 159, 181);
+    --cat-blue: rgb(30, 102, 245);
+    --cat-lavender: rgb(114, 135, 253);
+
+    --cat-text: rgb(76, 79, 105);
+    --cat-subtext-1: rgb(92, 95, 119);
+    --cat-subtext-0: rgb(108, 111, 133);
+
+    --cat-overlay-2: rgb(124, 127, 147);
+    --cat-overlay-2-selection: rgba(124, 127, 147, 0.3);
+    --cat-overlay-1: rgb(140, 143, 161);
+    --cat-overlay-0: rgb(156, 160, 176);
+
+    --cat-surface-2: rgb(172, 176, 190);
+    --cat-surface-1: rgb(188, 192, 204);
+    --cat-surface-0: rgb(204, 208, 218);
+
+    --cat-base: rgb(239, 241, 245);
+    --cat-mantle: rgb(230, 233, 239);
+    --cat-crust: rgb(220, 224, 232);
+
+  }
+}
+
+body {
+  background-color: var(--cat-base);
+}
+
+::selection {
+  background-color: var(--cat-overlay-2-selection);
+}
+
+#header {
+  padding: 4px;
+  padding-left: 24px;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+.dt-published {
+  color: var(--cat-subtext-0);
+  font-style: italic;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: var(--cat-text);
+}
+
+a:not(.dont-color-link) {
+  color: var(--cat-blue);
+}
+
+/* code */
+.highlight {
+  background-color: var(--cat-crust);
+}
+
+.lineno {
+  color: var(--cat-overlay-1);
+}
+
+/* Ensure code block and line numbers use same monospace and line height */
+.highlight pre, 
+.highlight pre > span, 
+.highlight .lineno {
+  font-family: "JetBrains Mono", monospace !important;
+  line-height: 1.5; /* adjust for your design */
+  vertical-align: top;
+  display: inline-block; 
+}
+
+.highlight pre {
+  padding-left: 8px;
+}
+
+.code > pre {
+  padding-left: 4px;
+}
+
+.highlighter-rouge {
+  background-color: var(--cat-crust);
+  padding: 4px;
+  border-radius: 5px;
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+.k, .kc, .kd, .kp, .kr, .kt, .kn {
+  color: var(--cat-mauve);
+}
+
+.s, .s1, .s2 {
+  color: var(--cat-green);
+}
+
+.n, .nf {
+  color: var(--cat-blue);
+}
+
+.nn {
+  color: var(--cat-yellow);
+}
+
+.nc, .nd {
+  color: var(--cat-yellow);
+}
+
+.nb {
+  color: var(--cat-red);
+}
+
+.na {
+  color: var(--cat-blue);
+}
+
+.no {
+  color: var(--cat-peach);
+}
+
+.c, .cm, .cp, .c1, .cs {
+  color: var(--cat-overlay-2);
+}
+
+.si {
+  color: var(--cat-pink);
+}
+
+.o {
+  color: var(--cat-sky)
+}
